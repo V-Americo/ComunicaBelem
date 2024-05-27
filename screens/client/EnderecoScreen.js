@@ -21,7 +21,7 @@ const EnderecoScreen = ({ navigation }) => {
             <Text style={styles.topic}>Descrição</Text>
             <TextInput style={styles.input}></TextInput>
 
-            <TouchableOpacity style={styles.buttonFinal} onPress={() => { navigation.navigate('DenunciaRealizada') }}>
+            <TouchableOpacity style={styles.buttonFinal} onPress={() => { navigation.navigate('DenunciaRealizadaScreen') }}>
                 <Text style={styles.buttonText}>Finalizar Denúncia</Text>
             </TouchableOpacity>
             

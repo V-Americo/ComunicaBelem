@@ -7,6 +7,7 @@ import RegisterScreen from './screens/auth/RegisterScreen';
 import ClientHomeScreen from './screens/client/ClientHomeScreen';
 import DenunciaFotoScreen from './screens/client/DenunciaFotoScreen';
 import EnderecoScreen from './screens/client/EnderecoScreen';
+import DenunciaRealizadaScreen from './screens/client/DenunciaRealizadaScreen';
 
 // Stack Navigator para autenticação
 const AuthStack = createStackNavigator();
@@ -50,6 +51,11 @@ function ClientHomeStackNavigator() {
       <ClientHomeStack.Screen 
         name="EnderecoScreen" 
         component={EnderecoScreen} 
+        options={{ headerShown: false }} 
+      />
+      <ClientHomeStack.Screen 
+        name="DenunciaRealizadaScreen" 
+        component={DenunciaRealizadaScreen} 
         options={{ headerShown: false }} 
       />
     </ClientHomeStack.Navigator>
